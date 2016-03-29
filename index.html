@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<script src="http://code.jquery.com/jquery-1.11.3.js"></script>
+		<script type='text/javascript' src='script.js'></script>
+		<script src = "https://cdn.socket.io/socket.io-1.2.0.js"></script>
+	</head>
+	<body>
+		<div>
+			<table>
+			<tr>
+				<td><h2>Outlet 1</h2></td>
+				<td><h2>Outlet 2</h2></td>
+				<td><h2>Outlet 3</h2></td>
+			</tr>
+			</table>
+		</div>
+		<div>
+			<button id = "button1a" type="button" class="btn btn-primary active btn-lg">On</button>
+			<button id = "button1b" type="button" class="btn btn-primary disabled btn-lg">Off</button>
+			<button id = "button2a" type="button" class="btn btn-primary active btn-lg">On</button>
+			<button id = "button2b" type="button" class="btn btn-primary disabled btn-lg">Off</button>
+			<button id = "button3a" type="button" class="btn btn-primary active btn-lg">On</button>
+			<button id = "button3b" type="button" class="btn btn-primary disabled btn-lg">Off</button>
+		</div>
+		<div>
+		<!-- remember to change link -->
+			<a href = "http://google.com" id = "graphs" type = "button" class="btn btn-primary">Display Graphs</a>
+		</div>
+		<script>
+			$(document).ready(function(){
+   				$("#button1a").click(function(){
+        			$(this).fadeOut();
+        			<!-- //(function(){
+					//socket.emit('command', 'H');-->
+    			});
+    			$("#button1b").click(function(){
+        			$(this).fadeOut();
+    			});
+    			$("#button2a").click(function(){
+        			$(this).fadeOut();
+    			});
+    			$("#button2b").click(function(){
+        			$(this).fadeOut();
+    			});
+    			$("#button3a").click(function(){
+        			$(this).fadeOut();
+    			});
+    			$("#button3b").click(function(){
+        			$(this).fadeOut();
+    			});
+			});
+		</script>
+	</body>	
+</html>
